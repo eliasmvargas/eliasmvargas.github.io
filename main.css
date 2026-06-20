@@ -1,0 +1,113 @@
+.syncopate-regular {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.syncopate-bold {
+  font-family: "Syncopate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.google-sans {
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+}
+
+#constellation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    z-index: -1;
+    background-color: #000619;
+}
+
+
+body{
+    background-color: #000619
+}
+
+
+.top-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px 5%; 
+    color: #FFFFFF;
+    background-color: #000619; 
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Syncopate', sans-serif; 
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: 'Google Sans', sans-serif; 
+}
+
+
+main{
+    color: #ffffff;
+}
+
+.hero-section{
+    min-height: 75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title{
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-family: "Syncopate", sans-serif;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    max-width:  500px;
+    font-weight: 400;
+    font-family: "Google Sans", sans-serif;
+}
+
+.social-icon{
+    color: #FFFFFF;
+    font-size: 1rem;
+    width: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover{
+    color: #ff9900;
+    justify-content: space-between; 
+    transform: translateY(-5px);
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
