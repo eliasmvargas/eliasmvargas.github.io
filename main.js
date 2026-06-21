@@ -33,7 +33,7 @@ for(let i = 0; i < numberOfStars; i++){
 }
 
 function resizeSatelliteCanvas(){
-    const size = Math.min(window.innerWidth, 800);
+    const size = Math.min(window.innerWidth, 1280);
     satellite_canvas.width = size;
     satellite_canvas.height = size;
 }
@@ -52,7 +52,7 @@ function animateStars(){
 }
 
 
-const mySatellite = new Satellite(250, 100, 0.0002);
+const mySatellite = new Satellite(400, 400, 0.0002);
 let previousTime = 0;
 
 function animateOrbit(currentTime){
