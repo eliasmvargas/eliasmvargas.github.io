@@ -1,5 +1,5 @@
-import { Star } from './Star.js';
-import { Satellite } from './Satellite.js';
+import { Star } from './star.js';
+import { Satellite } from './satellite.js';
 
 const star_canvas = document.getElementById('stars');
 const star_ctx = star_canvas.getContext('2d');
