@@ -13,9 +13,8 @@
 <link rel="stylesheet" href="main.css">
 
 </head>
-
 <body>
-    <canvas id="constellation"> </canvas>
+    <canvas id="stars"> </canvas>
     <header class = "top-header">
         <div class = "logo"> Elias Vargas</div>
         <div class="hamburger">
@@ -23,9 +22,6 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-
-
-
 
         <nav class = "nav-menu">
             <a href="#home">HOME</a>
@@ -38,7 +34,10 @@
 
     <main>
         <section class="hero-section">
+            <div class = "logo-wrapper">
+            <canvas id="satellite-orbit"> </canvas>
             <h1 class="main-title">Elias Vargas</h1>
+            </div>
             <p class="subtitle">4th year electrical engineering student interested in space systems and RF engineering</p>
             <div class="social-links"> 
                 <a href="https://github.com/eliasmvargas" class="social-icon">
@@ -100,6 +99,6 @@
         </p>
     </footer>
 
-    <script src="constellation.js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>

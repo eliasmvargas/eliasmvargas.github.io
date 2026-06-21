@@ -1,17 +1,4 @@
-const canvas = document.getElementById('constellation');
-const context = canvas.getContext('2d');
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-window.addEventListener('resize', ()=>{
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-});
-
-
-
-class Star{
+export class Star{
     constructor(max_opacity, size, x_position, y_position, fade_rate){
         // spacial parameters
         this.size = size;
@@ -47,37 +34,9 @@ class Star{
     draw(context){
         context.beginPath();
         context.arc(this.x_position, this.y_position, this.size, 0, Math.PI * 2);
-        context.fillStyle = `rgba(255, 255, 255, ${this.opacity}`;
+        context.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
         context.fill();
     }
 
 }
 
-
-const starArray = [];
-const numberOfStars = 150;
-
-for(let i = 0; i < numberOfStars; i++){
-    const x_position = Math.random() * canvas.width;
-    const y_position = Math.random() * canvas.height;
-    const size = Math.random() * 1.5 + 0.5;
-    const max_opacity = Math.random()*0.6 + 0.4;
-    const fade_rate = Math.random()*0.010 + 0.005;
-    const star = new Star(max_opacity, size, x_position, y_position, fade_rate);
-    starArray.push(star);
-}
-
-function animate(){
-    context.clearRect(0, 0, canvas.width, canvas.height);  
-
-    starArray.forEach(star =>{
-        star.update();
-        star.draw(context);
-
-    });
-
-    requestAnimationFrame(animate);
-}
-
-
-animate();
