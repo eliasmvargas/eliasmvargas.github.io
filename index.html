@@ -16,18 +16,30 @@
 
 <body>
     <canvas id="constellation"> </canvas>
+    
     <header class = "top-header">
         <div class = "logo"> Elias Vargas</div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+
+
+
         <nav class = "nav-menu">
             <a href="#home">HOME</a>
             <a href="#blog">BLOG</a>
             <a href="#goals">GOALS</a>
             <a href="#resume">RESUME</a>
         </nav>
+        <script src="hamburger.js"></script>
     </header>
 
-    <main class="hero-section">
-
+    <main>
+        <script src="index.js"> </script>
+        <section class="hero-section">
             <h1 class="main-title">Elias Vargas</h1>
             <p class="subtitle">4th year electrical engineering student interested in space systems and RF engineering</p>
             <div class="social-links"> 
@@ -53,8 +65,43 @@
                     </svg>
                 </a>
             </div>
+        </section>
+        <section class="welcome-section">
+            <h2 class="section-heading">
+                Hello!
+            </h2>
+            <p>
+                My name is Elias Vargas, a 4th year electrical engineering undergraduate student at the University of New Mexico. 
+                Aside from engineering, I enjoy music (guitar & choir), reading, and weightlifting! 
+                I created this website to showcase my personal projects, write blog posts to fully embrace the Feynman method of teaching to learn, and to try my hand at web development. 
+            </p>
+        </section>
+        <section class="project-section">
+            <h2 class="section-heading">
+                Projects
+            </h2>
+            <div class="project-grid">
+                <div class="project-card"></div>
+                <div class="project-card"></div>
+            </div>
+
+
+        </section>
 
     </main>
+
+    <footer class="footer">
+        <h3 class = "section-heading">
+            Contact Me
+        </h3>
+        <p>
+            Email: elias.mariano.vargas@gmail.com <br>
+            Discord: eliasmvargas <br>
+            <hr>
+            © 2026 Elias Vargas. All rights reserved.
+        </p>
+    </footer>
+
     <script src="constellation.js"></script>
 </body>
 </html>
