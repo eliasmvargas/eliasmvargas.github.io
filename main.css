@@ -45,6 +45,7 @@
     transform: translate(-50%, -50%);
     z-index: 1;
     pointer-events: none; /* Lets you click through it */
+    aspect-ratio: 1 / 1;
 }
 
 body{

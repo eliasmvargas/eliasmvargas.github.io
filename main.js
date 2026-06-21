@@ -32,6 +32,13 @@ for(let i = 0; i < numberOfStars; i++){
     starArray.push(star);
 }
 
+function resizeSatelliteCanvas(){
+    const size = Math.min(window.innerWidth, 800);
+    satellite_canvas.width = size;
+    satellite_canvas.height = size;
+}
+
+
 function animateStars(){
     star_ctx.clearRect(0, 0, star_canvas.width, star_canvas.height);  
 
@@ -45,7 +52,7 @@ function animateStars(){
 }
 
 
-const mySatellite = new Satellite(250, 100, 0.002);
+const mySatellite = new Satellite(250, 100, 0.0002);
 let previousTime = 0;
 
 function animateOrbit(currentTime){
@@ -67,3 +74,16 @@ if (!previousTime) previousTime = currentTime;
 
 requestAnimationFrame(animateStars);
 requestAnimationFrame(animateOrbit);
+
+// Run it once on load
+resizeSatelliteCanvas();
+
+// Add the resize listener back so it adjusts if someone rotates their phone!
+window.addEventListener('resize', () => {
+    // Update the stars
+    star_canvas.width = window.innerWidth;
+    star_canvas.height = window.innerHeight;
+    
+    // Update the satellite square
+    resizeSatelliteCanvas();
+});
