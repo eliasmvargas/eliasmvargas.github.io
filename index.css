@@ -106,9 +106,49 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    overflow: visible;
+    overflow: hidden;
 }
 
+
+/* Invisible rotating container */
+.orbit-path {
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    animation: spin 12s linear infinite;
+}
+
+/* Object orbiting around center */
+.orbiter {
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+
+    fill: white;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(250px);
+}
+
+.orbiter svg{
+    transform: rotate(90deg);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .headshot{
     width: 100px;
@@ -189,6 +229,14 @@ main{
     font-family: "Google Sans", sans-serif;
 }
 
+
+.social-links{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
 .social-icon{
     color: #FFFFFF;
     font-size: 1rem;
@@ -202,11 +250,7 @@ main{
     transform: translateY(-5px);
 }
 
-.social-links{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 
 @media (max-width: 768px){
 
