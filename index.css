@@ -114,8 +114,8 @@ main{
 .orbit-path {
     position: absolute;
 
-    width: 500px;
-    height: 500px;
+    width: min(500px, 70vh);
+    height: min(500px, 70vh);
 
     animation: spin 12s linear infinite;
 }
@@ -133,7 +133,7 @@ main{
     top: 50%;
     left: 50%;
 
-    transform: translateX(250px);
+    transform: translateX(calc(min(70vw, 500px) / 2));
 }
 
 .orbiter svg{
