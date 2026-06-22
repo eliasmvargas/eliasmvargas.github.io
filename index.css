@@ -10,7 +10,6 @@
   font-style: normal;
 }
 
-
 .google-sans {
   font-family: "Google Sans", sans-serif;
   font-optical-sizing: auto;
@@ -108,6 +107,13 @@ main{
     align-items: center;
     text-align: center;
     overflow: visible;
+}
+
+
+.headshot{
+    width: 100px;
+    height: auto;
+    
 }
 
 .main-title{
