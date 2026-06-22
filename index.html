@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="description" content="Elias Vargas engineering projects">
     <meta name="keywords" content="engineering, electrical, circuits, space, rf">
@@ -10,14 +11,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="index.css">
 
 </head>
+
 <body>
-    <canvas id="stars"> </canvas>
+    <canvas id="stars"> </canvas>   <!--Javascript canvas for animated stars-->
     <header class = "top-header">
-        <div class = "logo"> Elias Vargas</div>
-        <div class="hamburger">
+
+        <div class = "logo"> Elias Vargas</div> <!-- div wrapper for logo --> 
+
+        <div class="hamburger"> <!-- Hamburger menu for mobile --> 
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -29,13 +33,14 @@
             <a href="#goals">GOALS</a>
             <a href="#resume">RESUME</a>
         </nav>
-        <script src="hamburger.js"></script>
+
+        <script src="hamburger.js"></script> <!-- javascript funcitonality for hamburger menu  -->
+
     </header>
 
     <main>
         <section class="hero-section">
-            <div class = "logo-wrapper">
-            <canvas id="satellite-orbit"> </canvas>
+            <div class = "hero-logo-wrapper">
             <h1 class="main-title">Elias Vargas</h1>
             </div>
             <p class="subtitle">4th year electrical engineering student interested in space systems and RF engineering</p>
@@ -53,9 +58,9 @@
                     </svg>
                 </a>
                 <a href="https://discord.com/users/1092190123464065085" class="social-icon">
-                <svg id="Discord-Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.644 96">
+                    <svg id="Discord-Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.644 96">
                     <path id="Discord-Symbol-White" class="cls-1" d="M81.15,0c-1.2376,2.1973-2.3489,4.4704-3.3591,6.794-9.5975-1.4396-19.3718-1.4396-28.9945,0-.985-2.3236-2.1216-4.5967-3.3591-6.794-9.0166,1.5407-17.8059,4.2431-26.1405,8.0568C2.779,32.5304-1.6914,56.3725.5312,79.8863c9.6732,7.1476,20.5083,12.603,32.0505,16.0884,2.6014-3.4854,4.8998-7.1981,6.8698-11.0623-3.738-1.3891-7.3497-3.1318-10.8098-5.1523.9092-.6567,1.7932-1.3386,2.6519-1.9953,20.281,9.547,43.7696,9.547,64.0758,0,.8587.7072,1.7427,1.3891,2.6519,1.9953-3.4601,2.0457-7.0718,3.7632-10.835,5.1776,1.97,3.8642,4.2683,7.5769,6.8698,11.0623,11.5419-3.4854,22.3769-8.9156,32.0509-16.0631,2.626-27.2771-4.496-50.9172-18.817-71.8548C98.9811,4.2684,90.1918,1.5659,81.1752.0505l-.0252-.0505ZM42.2802,65.4144c-6.2383,0-11.4159-5.6575-11.4159-12.6535s4.9755-12.6788,11.3907-12.6788,11.5169,5.708,11.4159,12.6788c-.101,6.9708-5.026,12.6535-11.3907,12.6535ZM84.3576,65.4144c-6.2637,0-11.3907-5.6575-11.3907-12.6535s4.9755-12.6788,11.3907-12.6788,11.4917,5.708,11.3906,12.6788c-.101,6.9708-5.026,12.6535-11.3906,12.6535Z" fill="currentColor"/>
-                </svg>
+                    </svg>
                 </a>
                 <a href="mailto:elias.mariano.vargas@gmail.com" class="social-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="currentColor"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/>
@@ -63,6 +68,7 @@
                 </a>
             </div>
         </section>
+
         <section class="welcome-section">
             <h2 class="section-heading">
                 Hello!
@@ -73,6 +79,7 @@
                 I created this website to showcase my personal projects, write blog posts to fully embrace the Feynman method of teaching to learn, and to try my hand at web development. 
             </p>
         </section>
+
         <section class="project-section">
             <h2 class="section-heading">
                 Projects
@@ -81,8 +88,6 @@
                 <div class="project-card"></div>
                 <div class="project-card"></div>
             </div>
-
-
         </section>
 
     </main>
@@ -99,6 +104,7 @@
         </p>
     </footer>
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
+
 </html>

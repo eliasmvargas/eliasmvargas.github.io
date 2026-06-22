@@ -38,16 +38,6 @@
 }
 
 
-#satellite-orbit{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    pointer-events: none; /* Lets you click through it */
-    aspect-ratio: 1 / 1;
-}
-
 body{
     background-color: transparent;
     margin: 0;
@@ -85,7 +75,7 @@ body{
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: 1px;
-    font-family: 'Syncopate', sans-serif; 
+    font-family: "Syncopate", sans-serif; 
 }
 
 .nav-menu{
@@ -117,6 +107,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: visible;
 }
 
 .main-title{
@@ -212,6 +203,10 @@ main{
 }
 
 @media (max-width: 768px){
+
+    .logo{
+        font-size: 1.5rem;
+    }
     .project-grid{
         grid-template-columns: 1fr;
     }
@@ -219,6 +214,11 @@ main{
         z-index: 998;
         display:block;
     }
+
+    .main-title{
+        font-size: 3rem;
+    }
+
     .nav-menu{
         z-index: 997;
         position: fixed;

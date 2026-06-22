@@ -1,16 +1,11 @@
 import { Star } from './star.js';
-import { Satellite } from './satellite.js';
 
 const star_canvas = document.getElementById('stars');
 const star_ctx = star_canvas.getContext('2d');
-const satellite_canvas = document.getElementById('satellite-orbit');
-const satellite_ctx = satellite_canvas.getContext('2d');
 
 
 star_canvas.width = window.innerWidth;
 star_canvas.height = window.innerHeight;
-satellite_canvas.width = window.innerWidth;
-satellite_canvas.height = window.innerHeight;
 
 
 
@@ -32,12 +27,6 @@ for(let i = 0; i < numberOfStars; i++){
     starArray.push(star);
 }
 
-function resizeSatelliteCanvas(){
-    const size = Math.min(window.innerWidth, 1280);
-    satellite_canvas.width = size;
-    satellite_canvas.height = size;
-}
-
 
 function animateStars(){
     star_ctx.clearRect(0, 0, star_canvas.width, star_canvas.height);  
@@ -51,39 +40,11 @@ function animateStars(){
     requestAnimationFrame(animateStars);
 }
 
-
-const mySatellite = new Satellite(400, 400, 0.0002);
-let previousTime = 0;
-
-function animateOrbit(currentTime){
-if (!previousTime) previousTime = currentTime; 
-
-    const deltaTime = currentTime - previousTime;
-    previousTime = currentTime;
-
-    satellite_ctx.clearRect(0, 0, satellite_canvas.width, satellite_canvas.height);
-
-    const centerX = satellite_canvas.width / 2;
-    const centerY = satellite_canvas.height / 2;
-
-    mySatellite.update(deltaTime, centerX, centerY);
-    mySatellite.draw(satellite_ctx);
-
-    requestAnimationFrame(animateOrbit);
-}
-
 requestAnimationFrame(animateStars);
-requestAnimationFrame(animateOrbit);
 
-// Run it once on load
-resizeSatelliteCanvas();
-
-// Add the resize listener back so it adjusts if someone rotates their phone!
 window.addEventListener('resize', () => {
     // Update the stars
     star_canvas.width = window.innerWidth;
     star_canvas.height = window.innerHeight;
     
-    // Update the satellite square
-    resizeSatelliteCanvas();
 });

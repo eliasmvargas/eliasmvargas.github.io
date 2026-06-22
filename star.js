@@ -37,6 +37,5 @@ export class Star{
         context.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
         context.fill();
     }
-
 }
 
