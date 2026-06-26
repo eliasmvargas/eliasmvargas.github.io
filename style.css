@@ -1,3 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 .syncopate-regular {
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
@@ -19,12 +27,16 @@
     "GRAD" 0;
 }
 
+p {
+    margin: 1rem;
+}
+
 #stars{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
     background-color: #000619;
 }
@@ -100,6 +112,7 @@ main{
 }
 
 .hero-section{
+    width:100%;
     min-height: 75vh;
     display:flex;
     flex-direction: column;
@@ -133,7 +146,9 @@ main{
     top: 50%;
     left: 50%;
 
-    transform: translateX(calc(min(70vw, 500px) / 2));
+    transform: 
+        translate(-50%, -50%)
+        translateX(250px);
 }
 
 .orbiter svg{
@@ -152,6 +167,7 @@ main{
 
 .headshot{
     width: 100px;
+    margin-bottom: 1rem;
     height: auto;
     
 }
@@ -159,19 +175,23 @@ main{
 .main-title{
     font-size: 4rem;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-top: 1rem;
     font-family: "Syncopate", sans-serif;
 }
 
 .section-heading{
     font-family: "Syncopate", sans-serif;
+    margin: 1rem;
+    font-weight: 700;
 }
 
 .welcome-section{
+    border: solid cyan;
+    border-width: 1px;
     margin-top: 15vh;
     padding: 50px 5%;
-    background-color: #cccccc;
-    color:#000619;
+    background-color: #00000058;
+    color:#ffffff;
     flex-direction:column;
     justify-content:center;
     align-items: center;
@@ -181,10 +201,12 @@ main{
 }
 
 .project-section{
+    border: solid orange;
+    border-width: 1px;
     margin-top: 15vh;
     padding: 50px 5%;
-    background-color: #cccccc;
-    color:#000619;
+    background-color: #00000058;
+    color:white;
     flex-direction:column;
     justify-content:center;
     align-items: center;
@@ -203,8 +225,8 @@ main{
 
 .project-card{
     background-color:transparent;
-    outline-color:#000619;
-    outline-width: 0.25rem;
+    outline-color: orange;
+    outline-width: 1px;
     outline-style: solid;
     aspect-ratio: 1/1;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
@@ -214,12 +236,16 @@ main{
 .footer{
     color: #ffffff;
     background-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
     margin-bottom: 10px;
     font-family: 'Google Sans', sans-serif;
     padding: 50px 5%;
 
+}
+
+.copyright{
+    font-size:1rem;
 }
 
 .subtitle{
@@ -229,8 +255,8 @@ main{
     font-family: "Google Sans", sans-serif;
 }
 
-
 .social-links{
+    margin: 1rem;
     display: flex;
     align-items: center;
     align-content: center;
@@ -250,7 +276,30 @@ main{
     transform: translateY(-5px);
 }
 
+.goals{
+    color: white;
+    min-height: 75vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
 
+
+.page-heading{
+    min-height: 50vh;
+    font-family: "Syncopate", sans-serif;
+    font-style: normal;
+    margin: 1rem;
+    font-size:3rem;
+}
+
+hr{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
 
 @media (max-width: 768px){
 
