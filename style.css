@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-
-
 .syncopate-regular {
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
@@ -29,6 +27,8 @@
 
 p {
     margin: 1rem;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
 }
 
 #stars{
@@ -53,6 +53,17 @@ body{
     background-color: transparent;
     margin: 0;
     padding: 0;
+}
+
+h2{
+    font-family: "Syncopate", sans-serif;
+}
+
+ul{
+    font-family: "Google Sans", sans-serif;
+    text-align: left;
+    margin: 2rem;
+    margin-top: 1rem;
 }
 
 .top-header {
@@ -89,13 +100,24 @@ body{
     font-family: "Syncopate", sans-serif; 
 }
 
+.logo a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.logo a:hover{
+    color: orange;
+}
+
 .nav-menu{
     display: flex;
     gap: 40px;
     align-items: center;
+    overflow: hidden;
 }
 
-.nav-menu a {
+.nav-menu a{
     text-decoration: none;
     color: #FFFFFF;
     white-space: 100px;
@@ -105,6 +127,11 @@ body{
     white-space: 100px;
     font-family: 'Google Sans', sans-serif; 
 }
+
+.nav-menu a:hover{
+    color: orange;
+}
+
 
 
 main{
@@ -122,48 +149,6 @@ main{
     overflow: hidden;
 }
 
-
-/* Invisible rotating container */
-.orbit-path {
-    position: absolute;
-
-    width: min(500px, 70vh);
-    height: min(500px, 70vh);
-
-    animation: spin 12s linear infinite;
-}
-
-/* Object orbiting around center */
-.orbiter {
-    position: absolute;
-
-    width: 50px;
-    height: 50px;
-
-    fill: white;
-    border-radius: 50%;
-
-    top: 50%;
-    left: 50%;
-
-    transform: 
-        translate(-50%, -50%)
-        translateX(250px);
-}
-
-.orbiter svg{
-    transform: rotate(90deg);
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 .headshot{
     width: 100px;
@@ -185,45 +170,40 @@ main{
     font-weight: 700;
 }
 
-.welcome-section{
-    border: solid cyan;
-    border-width: 1px;
-    margin-top: 15vh;
-    padding: 50px 5%;
+.welcome-section, .project-section{
+    margin-top: 5vh;
+    padding: 2rem;
     background-color: #00000058;
     color:#ffffff;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
     text-align: left;
     font-family: "Google Sans", sans-serif;
     font-size: 1.5rem;
+}
+
+.welcome-section{
+    border: solid cyan;
+    border-width: 1px;
 }
 
 .project-section{
     border: solid orange;
     border-width: 1px;
-    margin-top: 15vh;
-    padding: 50px 5%;
-    background-color: #00000058;
-    color:white;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    text-align: left;
-    font-family: "Google Sans", sans-serif;
-    font-size: 1.5rem;
 }
 
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .project-card{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color:transparent;
     outline-color: orange;
     outline-width: 1px;
@@ -287,13 +267,48 @@ main{
     overflow: hidden;
 }
 
+.page-subtitle{
+    font-family: "Google Sans", sans-serif;
+    font-size: 1.5rem;
+    color:#ffffff;
+}
+
+.software-goals, .hardware-goals, .web-goals, .personal-goals{
+    width: 90vw;
+    margin-top: 1rem;
+    padding: 50px 5%;
+    background-color: #00000058;
+    color:#ffffff;
+    text-align: left;
+    font-family: "Google Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+.software-goals{
+    border: solid cyan;
+    border-width: 1px;
+}
+
+.hardware-goals{
+    border: solid orange;
+    border-width: 1px;
+
+}
+
+.personal-goals{
+    border: solid white;
+    border-width: 1px;
+}
 
 .page-heading{
-    min-height: 50vh;
     font-family: "Syncopate", sans-serif;
     font-style: normal;
-    margin: 1rem;
     font-size:3rem;
+}
+
+.page-heading-wrapper{
+    margin: 2em;
+    margin-top: 1em;
 }
 
 hr{
