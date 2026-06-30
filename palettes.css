@@ -1,0 +1,31 @@
+palette_one{
+    --tomato: #f06543ff;
+    --platinum: #e8e9ebff;
+    --soft-linen: #e0dfd5ff;
+    --gunmetal: #313638ff;
+    --sandy-brown: #f09d51ff;
+}
+
+palette_two{
+    --classic-crimson: #d7263dff;
+    --prussian-blue: #02182bff;
+    --dodger-blue: #0197f6ff;
+    --pacific-cyan: #448fa3ff;
+    --sky-blue-light: #68c5dbff;
+}
+
+palette_three{
+    --strong-cyan: #55dde0ff;
+    --baltic-blue: #33658aff;
+    --charcoal-blue: #2f4858ff;
+    --honey-bronze: #f6ae2dff;
+    --blaze-orange: #f26419ff;
+}
+
+palette_four{
+    --ink-black: #071e22ff;
+    --deep-ocean: #1d7874ff;
+    --jungle-teal: #679289ff;
+    --peach-glow: #f4c095ff;
+    --racing-red: #ee2e31ff;
+}
