@@ -8,7 +8,7 @@
     --tomato: #f06543ff;
     --platinum: #e8e9ebff;
     --soft-linen: #e0dfd5ff;
-    --gunmetal: #313638ff;
+    --gunmetal: rgb(30, 33, 34);
     --sandy-brown: #f09d51ff;
 
     --bg-1: var(--gunmetal); /*Primary background*/
@@ -164,18 +164,16 @@ main{
 
 
 .headshot{
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     display: inline-block;
     position: relative;
-    z-index: 999;
-    width: 120px;
+    width: 7em;
     margin-bottom: 1rem;
     height: auto;
     
 }
 
 .main-title{
-    background-color: var(--tomato);
     font-size: 4rem;
     font-weight: 700;
     font-family: "Syncopate", sans-serif;
