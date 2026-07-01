@@ -196,8 +196,8 @@ main{
 }
 
 .project-page{
-    color: var(--light-text-color);
-    background-color: var(--bg-1);
+    color: var(--dark-text-color);
+    background-color: var(--bg-2);
 }
 
 .welcome-section{
@@ -219,6 +219,7 @@ main{
 }
 
 .project-card{
+    font-family: "Google Sans", sans-serif;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -230,6 +231,7 @@ main{
     box-shadow: 10px 5px 5px rgba(0,0,0,0.1);
     color: var(--dark-text-color);
     transition: background-color 0.3s ease, color 0.3s ease;
+    outline: solid var(--tomato) 2px;
 }
 
 .project-card:hover{
@@ -291,11 +293,16 @@ main{
 }
 
 
-
-.page-subtitle{
+.page-subtitle, .page-subtitle-dark{
+    text-align: center;
     font-family: "Google Sans", sans-serif;
     font-size: 1.5rem;
     color:var(--light-text-color);
+}
+
+.page-subtitle-dark{
+    color: var(--tomato);
+    font-weight: 700;
 }
 
 .software-goals, .hardware-goals, .web-goals, .personal-goals{
