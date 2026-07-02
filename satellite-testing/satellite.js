@@ -6,7 +6,7 @@ let r_major = window.innerHeight / 4;
 let center_x = window.innerWidth / 2;
 let center_y = window.innerHeight / 2;
 
-let omega = 0.001 // in radians / time
+const omega = 0.001 // in radians / time
 
 let theta = 0;
 
@@ -47,23 +47,6 @@ function resizeOrbit(){
 
 }
 
-
-function grabber(e){
-    omega = 0;
-    console.log("Test!");
-    posX = e.clientX;
-    posY = e.clientY;
-}
-
-function reset_omega(){
-    omega = 0.001;
-}
-
-
 requestAnimationFrame(orbit);
-
-
-satelliteObject.addEventListener("mousedown", grabber);
-satelliteObject.addEventListener("mouseup", reset_omega);
 
 window.addEventListener('resize', resizeOrbit);

@@ -22,20 +22,6 @@
 }
 
 
-#satelliteObject{
-    position: absolute;
-    background-color: transparent;
-    width: 60px;
-    height: auto;
-}
-
-#satelliteObject:active{
-    width: 80px;
-    height: auto;
-}
-
-
-
 .syncopate-regular {
   font-family: "Syncopate", sans-serif;
   font-weight: 400;
