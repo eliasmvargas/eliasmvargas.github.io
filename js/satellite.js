@@ -6,7 +6,10 @@ let r_major = window.innerHeight / 4;
 let center_x = window.innerWidth / 2;
 let center_y = window.innerHeight / 2;
 
-let omega = 0.001 // in radians / time
+
+
+
+let omega = 0.0002 // in radians / time
 
 let theta = 0;
 
@@ -56,7 +59,7 @@ function grabber(e){
 }
 
 function reset_omega(){
-    omega = 0.001;
+    omega = 0.0002;
 }
 
 
