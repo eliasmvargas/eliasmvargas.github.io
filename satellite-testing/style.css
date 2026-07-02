@@ -1,0 +1,14 @@
+body{
+    background-color: black;
+}
+
+
+
+
+#satelliteObject{
+    position: absolute;
+    background-color: transparent;
+    width: 100px;
+    height: auto;
+}
+

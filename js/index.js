@@ -29,7 +29,7 @@ for(let i = 0; i < numberOfStars; i++){
 
 
 function animateStars(){
-    star_ctx.clearRect(0, 0, star_canvas.width, star_canvas.height);  
+    star_ctx.clearRect(0, 0, star_canvas.width, star_canvas.height);
 
     starArray.forEach(star =>{
         star.update();
