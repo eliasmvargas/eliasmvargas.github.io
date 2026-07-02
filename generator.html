@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta name="description" content="Elias Vargas engineering projects">
+            <meta name="keywords" content="engineering, electrical, circuits, space, rf">
+            <meta name="author" content="Elias Vargas">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Elias Vargas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <canvas id="stars"> </canvas> 
+    <header class = "top-header">
+
+    <div class = "logo"> <a href="index.html"> Elias Vargas </a> </div> <!-- div wrapper for logo --> 
+
+
+        <div class="hamburger"> <!-- Hamburger menu for mobile --> 
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <nav class = "nav-menu">
+            <a href="index.html">HOME</a>
+            <a href="goals.html">GOALS</a>
+            <a href="projects.html">PROJECTS</a>
+        </nav>
+
+        <script src="js/hamburger.js"></script> <!-- javascript funcitonality for hamburger menu  -->
+
+    </header>
+
+    <main>
+        <section class="projects">
+            <h2>DDS Function Generator</h2>
+            <p><a href = "https://www.youtube.com/@IMSAIGuy" >IMSAI Guy</a>, one of my favorite electronics Youtubers, recommended those interested in tinkering with electronics to build their own equipment if their lab is lacking it. I've invested a fair amount into a nice oscilloscope (RIGOL DHO812), but I've been using a spliced 3.5mm audio cable and a pure tone generator on my computer as a makeshift function generator. As you might be able to guess, this has been far from ideal. I decided making a function generator would be a great solution!</p>
+            <h2> Plan </h2>
+            <p>
+                I wanted something fairly compact and simple to use and reliable within the audible range. After some thinking, I came up with these requirements:
+            </p>
+                <ul>
+                    <li>Powered by 12V DC wall wort</li>
+                    <li>Reliable between 0-100kHz</li>
+                    <li>10V peak to peak max output</li>
+                    <li>Sine, square, and triangle wave output</li>
+                    <li>LCD display to show frequency and amplitude</li>
+                </ul>
+            <p>
+                At first, I thought of doing a purely analog function generator for the cool-ness factor of doing something without having to program it.. But I shortly realized that the analog options available were going to be significantly more complicated than it was worth, in my case. After some research I found the AD9833 direct digital synthesis chip, which is low power, easy to program, affordable, and had <i>most</i> of the output capability I was looking for. The only thing lacking was the adjustable output voltage. But this actually made for a great excuse to add some analog components into this project! The AD9833 actually has a much wider frequency range than I need, with a nominal max frequency of 12.5MHz, but signal quality begins to significantly degrade after around 8MHz. Fine by me! More than enough.
+            </p>
+            <h2>Bit by Bit</h2>
+            <p>
+                I decided to start with the digital side of things first.
+            </p>
+            <h2> Powering Up</h2>
+            <p>
+
+            </p>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <hr>
+        <h3 class = "section-heading">
+            Contact Me
+        </h3>
+        <p>
+            Email: elias.mariano.vargas@gmail.com <br>
+            Discord: eliasmvargas <br>
+            <br>
+            <p class="copyright"> © 2026 Elias Vargas. All rights reserved.</p>
+        </p>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+
+</body>
+</html>

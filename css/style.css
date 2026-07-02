@@ -78,6 +78,15 @@ ul{
     text-align: left;
 }
 
+.projects ul{
+    margin:2.5rem;
+    font-size: 1.25rem;
+}
+
+.projects p{
+    font-size: 1.25rem;
+}
+
 .top-header {
     position: sticky;
     top: 0;
@@ -187,7 +196,7 @@ main{
     font-weight: 700;
 }
 
-.welcome-section, .project-section, .project-page{
+.welcome-section, .project-section, .project-page, .projects{
     margin-top: 5vh;
     padding: 2rem;
     text-align: left;
@@ -198,6 +207,11 @@ main{
 .project-page{
     color: var(--dark-text-color);
     background-color: var(--bg-2);
+}
+
+.projects{
+    background-color: var(--soft-linen);
+    color: var(--dark-text-color);
 }
 
 .welcome-section{
@@ -238,6 +252,12 @@ main{
     background-color: var(--tomato);
     color: var(--soft-linen);
 }
+
+
+.card-link{
+    text-decoration: none;
+}
+
 
 .footer{
     color: var(--light-text-color);
